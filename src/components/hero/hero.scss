@@ -12,6 +12,7 @@
         height: 100%;
         width: 73vw;
         margin: auto;
+        z-index: 99;
         @include tablet {
             width: 90vw;
         }
