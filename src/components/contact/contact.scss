@@ -1,0 +1,120 @@
+@import "../../app.scss";
+
+.contact {
+    height: 100%;
+    max-width: 1366px;
+    margin: auto;
+    width: 73vw;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    @include tablet {
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+        // transform: none !important;
+    }
+
+    .textContainer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @include tablet {
+            gap: 10px;
+            text-align: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 70px;
+            line-height: 60px;
+
+            @include tablet {
+                font-size: 36px;
+            }
+        }
+
+        span {
+            font-weight: 300;
+        }
+    }
+
+    .formContainer {
+        flex: 1;
+        position: relative;
+
+        @include tablet {
+            position: unset;
+            width: 90vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .phoneSvg {
+            stroke: orange;
+            position: absolute;
+            margin: auto;
+            z-index: -1;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            @include tablet {
+                left: unset;
+                right: unset;
+                top: unset;
+                bottom: unset;
+            }
+
+            svg {
+
+                @include tablet {
+                    // display: none;
+                    height: 100px;
+                    width: 100px;
+                    // left: 0;
+                    // right: 0;
+                }
+            }
+            
+            
+        }
+        
+        form {
+
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+             @include tablet {
+                width: 100%;
+             }
+
+            input, textarea {
+                padding: 13px;
+                background-color: transparent;
+                border: 1px solid white;
+                color: white;
+                border-radius: 5px;
+
+                @include tablet {
+                    padding: 10px;
+                }
+            }
+
+            button {
+                padding: 13px;
+                border: none;
+                background-color: orange;
+                cursor: pointer;
+                @include tablet {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}

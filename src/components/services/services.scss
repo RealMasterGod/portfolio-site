@@ -1,0 +1,175 @@
+@import "../../app.scss";
+
+.services {
+    background: linear-gradient(to bottom, #0c0c1d, #111132);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include tablet {
+        gap: 20px;
+    }
+
+    @include tablet {
+        transform: none !important;
+    }
+
+    .textContainer {
+        flex: 1;
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        // border: 1px solid red;
+        @include tablet {
+            align-self: flex-end;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        p {
+            font-weight: 200;
+            font-size: 16px;
+            color: gray;
+            text-align: right;
+        }
+
+        hr {
+            width: 300px;
+            border: none;
+            border-top: 0.5px solid gray;
+            @include tablet {
+                // width: 400px;
+            }
+        }
+    }
+
+    .titleContainer {
+        flex: 1.5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include tablet {
+            width: 100%;
+        }
+
+        // border: 1px solid red;
+        .title {
+            display: flex;
+            gap: 35px;
+            align-items: center;
+
+            @include tablet {
+                flex-direction: column;
+                text-align: center;
+                gap:20px;
+            }
+
+
+            img {
+                width: 280px;
+                height: 80px;
+                border-radius: 50px;
+                object-fit: cover;
+                @include tablet {
+                    width: 150px;
+                    height: 50px;
+                }
+            }
+
+            h1 {
+                font-size: 60px;
+                font-weight: 100;
+                // color: white;
+                @include tablet {
+                    font-size: 36px;
+                }
+            }
+
+            button {
+                width: 280px;
+                height: 80px;
+                border-radius: 50px;
+                background-color: orange;
+                border: none;
+                font-size: 22px;
+                cursor: pointer;
+                @include tablet {
+                    width: 150px;
+                    height: 50px;
+                    font-size: 16px;
+                }
+            }
+
+        }
+    }
+
+    .listContainer {
+        flex: 2;
+        display: flex;
+        max-width: 1366px;
+        margin: auto;
+        width: 73vw;
+        // border: 1px solid red;
+
+        @include tablet {
+            width: auto;
+            flex-direction: column;
+        }
+
+        .box {
+            padding: 20px;
+            border: 0.5px solid gray;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+            @include tablet {
+                border: none;
+                gap: 5px;
+                padding: 10px;
+                width: 90vw;
+                align-items: center;
+                
+            }
+
+            h2 {
+                @include tablet {
+                    font-size: 16px;
+                }
+            }
+
+            p {
+                @include tablet {
+                    display: none;
+                }
+            }
+
+            button {
+                padding: 10px;
+                background-color: orange;
+                border: none;
+                cursor: pointer;
+
+                @include tablet {
+                    background-color: transparent;
+                    border: 1px solid orange;
+                    color: orange;
+                    width: 40%;
+                    border-radius: 5px;
+                    padding: 2px;
+                }
+            }
+        }
+
+        .box:hover {
+            @include tablet {
+                color: unset !important;
+                background-color: unset !important;
+            }
+        }
+    }
+}

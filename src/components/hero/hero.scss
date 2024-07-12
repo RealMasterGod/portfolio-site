@@ -1,0 +1,128 @@
+@import "../../app.scss";
+
+.hero {
+    height: calc(100vh - 100px);
+    background: linear-gradient(to bottom, #0c0c1d, #111132);
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+
+    .wrapper {
+        max-width: 1366px;
+        height: 100%;
+        width: 73vw;
+        margin: auto;
+        @include tablet {
+            width: 90vw;
+        }
+
+        .textContainer {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+
+            @include tablet {
+                height: 50%;
+                width: 100%;
+                align-items: center;
+                text-align: center;
+            }
+
+            h2 {
+                font-size: 30px;
+                color: rebeccapurple;
+                letter-spacing: 10px;
+                @include tablet {
+                    font-size: 16px;
+                }
+            }
+
+            h1 {
+                font-size: 60px;
+                @include tablet {
+                    font-size: 36px;
+                }
+            }
+
+            .buttons {
+                button {
+                    padding: 15px;
+                    border: 1px solid white;
+                    border-radius: 10px;
+                    background-color: transparent;
+                    color: white;
+                    margin-right: 20px;
+                    cursor: pointer;
+                    font-weight: 300;
+                }
+
+                button:hover {
+                    background-color: white;
+                    color: black;
+                }
+            }
+
+            img {
+                width: 50px;
+                @include tablet {
+                    width:30px;
+                }
+            }
+        }
+    }
+
+    .slidingTextContainer {
+        @include tablet {
+            font-size: 30px;
+        }
+    }
+
+    .imageContainer {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @include tablet {
+            height: 50%;
+            width: 100%;
+            bottom:0;
+            top:unset;
+        }
+        
+        img {
+            height: 550px;
+            @include tablet {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        a {
+            position: absolute;
+            right: 200px;
+            bottom: 9px;
+            font-size: 9px;
+
+            @include tablet {
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+
+    .slidingTextContainer {
+        position: absolute;
+        font-size: 50vh;
+        bottom: -95px;
+        white-space: nowrap;
+        color: #ffffff09;
+        width: 100%;
+        font-weight: bold;
+    }
+}
