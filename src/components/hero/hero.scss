@@ -12,7 +12,6 @@
         height: 100%;
         width: 73vw;
         margin: auto;
-        z-index: 99;
         @include tablet {
             width: 90vw;
         }
@@ -24,6 +23,8 @@
             flex-direction: column;
             justify-content: center;
             gap: 20px;
+            position: relative;
+            z-index: 99;
 
             @include tablet {
                 height: 50%;
@@ -76,10 +77,19 @@
     }
 
     .slidingTextContainer {
+        position: absolute;
+        font-size: 50vh;
+        bottom: -95px;
+        white-space: nowrap;
+        color: #ffffff09;
+        width: 100%;
+        font-weight: bold;
+        // z-index: -1;
         @include tablet {
-            font-size: 30px;
+            font-size: 30px
         }
     }
+
 
     .imageContainer {
         height: 100%;
@@ -117,13 +127,4 @@
         }
     }
 
-    .slidingTextContainer {
-        position: absolute;
-        font-size: 50vh;
-        bottom: -95px;
-        white-space: nowrap;
-        color: #ffffff09;
-        width: 100%;
-        font-weight: bold;
-    }
 }
