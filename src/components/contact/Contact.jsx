@@ -32,15 +32,15 @@ const Contact = () => {
         <motion.h1 variants={variants}>Let's work together</motion.h1>
         <motion.div variants={variants} className="item">
           <h2>Mail</h2>
-          <span>hello@react.dev</span>
+          <span>gurrakhakhatri@gmail.com</span>
         </motion.div>
         <motion.div variants={variants} className="item">
           <h2>Address</h2>
-          <span>93, Diagon Allay, London, Great Britain</span>
+          <span>93, DiaXX AllXX, LoXXXX, GrXXX BrXXXX</span>
         </motion.div>
         <motion.div variants={variants} className="item">
           <h2>Phone</h2>
-          <span>+91 233XXXXXXv</span>
+          <span>+91 233XXXXXX</span>
         </motion.div>
       </motion.div>
       <div className="formContainer">

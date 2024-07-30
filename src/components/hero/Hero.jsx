@@ -51,10 +51,10 @@ const Hero = () => {
             Web developer and UI designer
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
+            <motion.button variants={textVariants} onClick={() => window.open("https://github.com/RealMasterGod?tab=repositories", '_blank')}>
               See the Latest Works
             </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            <motion.button variants={textVariants} onClick={() => window.location.href="#Contact"}>Contact Me</motion.button>
           </motion.div>
           <motion.img
             variants={textVariants}
